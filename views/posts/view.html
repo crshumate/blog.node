@@ -1,0 +1,14 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-offset-3 col-sm-9">
+            <h2>{{post.title}}</h2>
+            <div class="body">{{{post.body}}}</div>
+            <ul class="list-inline">
+                {{#each post.categories}}
+                <li>{{this}}</li>
+                {{/each}}
+                
+            </ul>
+        </div>
+    </div>
+</div>

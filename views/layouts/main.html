@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/site/assets/lovelilies-0.0.0.css">
+    <script type="text/javascript" src="/site/assets/lovelilies-0.0.0.js"></script>
+
+</head>
+
+<body>
+    {{#if user}}
+        {{> admin_menu}}
+    {{/if}}
+    
+    
+
+    {{#each alerts}}
+    <div>
+        <div class="message info alert-{{type}} alert-dismissable">
+            {{message}}
+        </div>
+    </div>
+    {{/each}} 
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+
+                {{{body}}}
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+
+.DS_Store
+public/img/*
+public/img/thumb/*
+public/build
+public/site

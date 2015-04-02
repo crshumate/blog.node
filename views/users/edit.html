@@ -1,0 +1,33 @@
+<br/>
+<div class="container-fluid">
+    <div class="col-sm-5 col-sm-offset-4">
+        <form action="/blog/edit/{{post.slug}}" name="editPost" method="post" class="form-horizontal">
+            <div class="form-group">
+                <input type="text" name="title" id="title" placeholder="Username" class="form-control" value="{{user.username}}" />
+            </div>
+            <div class="form-group">
+                <input type="text" name="email" id="email" placeholder="Email" value="{{user.email}}" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Save User" />
+            </div>
+
+        </form>
+
+        <h2>Update Password</h2>
+        <form action="/users/edit/{{user.username}}" class="form-horizontal" method="post">
+            <div class="form-group">
+                <label>Old Password</label>
+                <input type="password" name="password" placeholder="Password" id="password" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>New Password</label>
+                <input type="password" name="newpassword" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Update password" />
+            </div>
+        </form>
+    </div>
+</div>

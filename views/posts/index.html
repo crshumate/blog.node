@@ -1,0 +1,33 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-offset-2 col-sm-7">
+            <h1>{{title}}</h1>
+            <p>Welcome to {{title}}</p>
+
+            <ul>
+                {{#each posts}}
+                <li>
+                    <h2><a href="/blog/post/{{slug}}">{{title}}</a>
+                    </h2>
+                    {{{body}}}
+
+                    <ul class="">
+                        {{#each categories}}
+                        <li>
+                            {{this}}
+                        </li>
+                        {{/each}}
+                    </ul>
+
+                    <a href="/blog/edit/{{slug}}" />Edit Post</a>
+                    <a href="/blog/delete/{{slug}}" />Delete Post</a>
+
+                </li>
+                {{/each}}
+
+            </ul>
+
+
+        </div>
+    </div>
+</div>

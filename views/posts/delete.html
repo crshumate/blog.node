@@ -1,0 +1,14 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-offset-3 col-sm-9">
+            <h2>Delete Post</h2>
+            <p class='lead'>Are you sure you want to delete:</p>
+            <h3>{{post.title}}</h3>
+            <form action="/blog/delete/{{post.slug}}" method="post">
+                <input type="submit"  class="btn btn-success" value="Delete this post" />
+                <a href="/" class="btn btn-danger">Whoa! Get me outta here!</a>
+            </form>
+
+        </div>
+    </div>
+</div>

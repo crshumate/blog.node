@@ -1,0 +1,13 @@
+<div class="container-fluid">
+    <div class="row">
+            <div class="col-sm-5 col-sm-offset-4">
+                <h1>{{title}}</h1>
+                <p>Welcome to {{title}}</p>
+                <form method='post' action='/images/upload' enctype="multipart/form-data">
+                    <input type='text' name='title' />
+                    <input type='file' name='image' />
+                    <input type='submit'>
+                </form>
+            </div>
+    </div>
+</div>
