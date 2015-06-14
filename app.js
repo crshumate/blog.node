@@ -33,6 +33,7 @@ require('./configs/passport');
 //email configs
 var email = require('./configs/email');
 
+//handlbars configs
 var hbs = require('./configs/handlebars');
 hbs = hbs.hbsconfig();
 
